@@ -1,9 +1,8 @@
-function App() {
-  return (
-    <div className="App">
+import React from "react";
+import EventPractice from "./EventPractice";
 
-    </div>
-  );
+function App() {
+  return <EventPractice />;
 }
 
 export default App;
