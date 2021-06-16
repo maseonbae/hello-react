@@ -11,7 +11,7 @@ const IterationSample = () => {
   const [nextId, setNextId] = useState(5);
 
   const removeElement = id => {
-    const nextNames = names.filter(name => name.id != id);
+    const nextNames = names.filter(name => name.id !== id);
     setNames(nextNames);
   };
 
@@ -23,7 +23,7 @@ const IterationSample = () => {
     setInputText(e.target.value);
   };
 
-  const handleOnClick = e => {
+  const handleOnClick = () => {
     const nextNames = names.concat({
       id: nextId,
       text: inputText
